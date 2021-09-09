@@ -1,0 +1,320 @@
+*,
+*::after,
+*::before{
+box-sizing: border-box;
+margin: 0; 
+padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.cajas{
+    
+    flex-grow: 1;
+
+}
+/*Red sociales */
+.social {
+  
+background-color: yellow;
+}
+/*-----------------*/
+
+/*estilo titulo de calculo */
+
+  .cajas .caja1 .fa-calculator {
+
+  font-size: 30px;
+  color: yellow;
+  
+   }
+  
+   .fa-phone-volume {
+       padding: 5px;
+       background-color: green;
+       color: white;
+       text-decoration: none;
+       border-radius: 5px;
+   }
+   .cajas .caja1 .t1{
+       display: flex;
+       justify-content: flex-start;
+       padding: 30px;
+       
+   }
+   p{
+       padding-left: 8px;
+       font-size: 25px;
+   }
+  .cajas .caja1 .ul {
+      padding: 10px;
+      margin-left: 20px;
+      list-style-type: none;
+      
+       
+
+   }
+   .cajas .caja1 .ul a{
+       text-decoration: none;
+       color: black;
+     
+   }
+   .cajas .caja1 .ul a:hover{
+    font-size: 1.1em;
+    color:blue;
+  
+}
+
+.cajas .caja1 .ul a:active{
+
+    color:#181b36;
+  
+}
+   .cajas .caja1 .ul li{
+       padding: 5px;
+        
+   }
+/*----------------------------*/
+
+/*caja 2 cuadros */
+.error {
+    color :red;
+}
+.caja2{
+    padding-left: 40px;
+}
+.caja2 form{
+ 
+ flex-direction: column;
+ width:150px;
+}
+.input{
+    font-size: 20px;
+    margin-top: 30px;
+}
+.submit{
+    margin-top: 15px;
+    padding: 10px 30px;
+    background-color: rgb(3, 104, 235);
+    border:rgb(3, 104, 235) 1px solid ;
+    font-size: 15px;
+}
+.submit:hover{
+    padding: 15px 35px;
+}
+::placeholder{
+    font-size: 20px;
+    font-family: "Font Awesome 5 Free";
+     font-weight: 900;
+     color: rgb(230, 16, 16);
+     text-align: end;
+     
+     
+     
+}
+
+
+
+
+
+/*------------------*/
+
+
+
+/*estilo footer*/
+.tema{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
+    
+}
+.tema img{
+    width: 250px;
+    height: 120px;
+    border: black 2px solid;
+}
+#tema2{
+    font-size: 18px;
+    padding: 10px;
+   width: 300px;
+   color: white;
+}
+.cajafooter {
+       
+       padding: 10px;
+       flex:  0 0 25%;
+       flex-wrap: wrap;
+       color: black;
+       color: white;
+}
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    border-top: black 8px solid;
+    min-height: 40vh;
+    background: #181b36;
+}
+.ubicacion .chimbote{
+    
+    text-align: start;
+    padding: 10px;
+}
+.chimbote h5{
+    color: red;
+    padding: 10px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.chimbote a{
+    color: white;
+    text-decoration:none;
+}
+.chimbote a:hover{
+    text-decoration:black;
+}
+.chimbote .fa-map-marker-alt{
+    
+    padding: 1px;
+}
+.contacto .fa-whatsapp{
+    margin-top: 20px;
+    width: 110px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.contacto .fa-whatsapp:hover{
+
+    color: black;
+
+
+}
+.contacto{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.red #correo{
+
+
+   display: flex;
+
+   flex-direction: column;
+   text-decoration: none;
+color: white;
+ font-size: 20px;
+}
+.red #correo:hover{
+    color: black;
+    
+    text-decoration: blue;
+
+}
+.red a{
+    margin-top: 15px;
+    
+}
+.red .fa-facebook-square{
+    font-size: 50px;
+    color: rgb(29, 127, 255);
+    text-decoration: none;
+}
+.red .fa-instagram{
+    font-size: 50px;
+    color: red;
+    text-decoration: none;
+}
+.red .fa-tiktok{
+    font-size: 42px;
+    color: black;
+    text-decoration: none;
+}
+
+
+/*----------------------*/
+.img img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+/*Logo titulos */
+.titulo{
+   padding: 1rem;
+   background-color: #181b36;
+   color: #eee;
+
+}
+/*estilo para whatsapp*/
+.fa-whatsapp{
+    padding: 5px;
+    color:white;
+    background-color: green;
+    text-decoration: none;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-bottom:black 8px solid ;
+}
+.menu ul{
+    list-style-type: none;
+    
+}
+
+/*-------------*/
+@media screen and (min-width:1024px){
+    
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    } 
+
+    .menu ul{
+        display: flex;
+        
+    }
+
+    .menu li{
+        padding: .5rem;
+    }
+     .cajas{
+         display: flex;
+     }
+     .cajas .c1{
+         flex:0 0 40% ;
+     }
+     .fa-whatsapp {
+         padding: .5rem;
+     }
+     .fa-phone-volume{
+        padding: .5rem;
+     }
+     
+}
+
+@media screen and (max-width:700px){
+    .footer{
+        flex-direction: column;
+    }
+    .ul {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 390px){
+    .ul {
+        font-size: 14px;
+    }
+    
+}
+
+

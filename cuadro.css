@@ -1,0 +1,61 @@
+*,
+*::after,
+*::before{
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+}
+
+table  {
+       
+    border: black 2px solid;
+    margin-top: 15px;
+    width: 800px;
+    border-collapse: collapse;
+    flex-wrap: wrap;
+}
+table tr td{
+    padding: 15px;
+    border: black 1px solid;
+   
+
+   
+}
+p{
+    font-size: 15px;
+    padding: 3px;
+    
+}
+.importante{
+    color: red;
+    padding: 5px;
+}
+th{
+    padding: 15px;
+    text-align: left;
+    border-left: black 1px solid;
+}
+.error {
+    color :black;
+    background: rgb(235, 97, 97);
+    padding: 10px;
+}
+
+@media screen and (max-width:1024px) {
+
+    table{
+        width: auto;
+        padding: 5px;
+    }
+    
+    th{
+        padding: 9px;
+        font-size: 11px;
+    }
+    td{
+        padding: 9px;
+        font-size: 11px;
+    }
+
+    
+}
